@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета владельца котика</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1818/1818401.png" type="image/svg">
+</head>
+    <body>
+        <form>
+            <fieldset>
+    <legend>Контактные данные</legend>
+    <label for="catname">Кличка питомца:</label> 
+    <input type="text" name="catname" id="catname" value="Кличка" required /> 
+    <p>
+    <label for="name">Имя владельца:</label> 
+    <input type="text" name="name" id="name" value="Имя" required />
+    </p>
+    <p>
+        <label for="phone">Конттактный телефон</label>
+        <input type="text" name="phone" id="phone" value="Телефон" required />
+    </p>
+</fieldset>
+<p>Порода питомца</p>
+<select name="breed">
+<option value="Siberian">Сибирская кошка</option>
+<option value="Maine Coon">Мейн-кун</option>
+<option value="Sphinx">Сфинкс</option>
+<option  value="Other">Другое</option>
+</select>
+<p>Чем питается питомец?</p>
+<input type="checkbox" name="dry" value="1" />Сухой корм<br />
+<input type="checkbox" name="wet" value="2" />Влажный корм<br />
+<input type="checkbox" name="mixed" value="1" />Натуральный корм<br />
+<p>Пол питомца</p>
+<input type="radio" name="sex" value="m" />Самец<br />
+<input type="radio" name="sex" value="f" />Самка<br />
+<p>Комментарий владельца</p>
+<textarea rows="5" cols="20">Комментарии о питомце</textarea>
+<p><input type="file" />Приложите фото питомца</p>
+<button>Сохранить</button>
+</form>
+<script src="./index.js"></script>
+</body>
+</html>
